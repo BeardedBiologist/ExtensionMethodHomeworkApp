@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
 
+namespace ExtensionMethodHomework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var person = new Person { Name = "John" };
+            person.SetDefaultAge().PrintInfo();
+        }
+    }
+}
